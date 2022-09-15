@@ -10,22 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_04_232443) do
+ActiveRecord::Schema.define(version: 2022_13_09_232443) do
 
-    create_table "pokemons", force: :cascade do |t|
-      t.string "name"
-      t.string "location"
-      t.string "move"
-      t.datetime "created_at", precision: 6, null: false
-      t.datetime "updated_at", precision: 6, null: false
-    end
-  
-    create_table "reviews", force: :cascade do |t|
-      t.integer "rating"
-      t.string "text"
-      t.integer "pokemon_id"
-      t.datetime "created_at", precision: 6, null: false
-      t.datetime "updated_at", precision: 6, null: false
-    end
-  
+  create_table "pokemons", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.string "move"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer "rating"
+    t.string "text"
+    t.integer "pokemon_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+end

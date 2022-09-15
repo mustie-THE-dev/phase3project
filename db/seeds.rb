@@ -1,3 +1,5 @@
+
+
 puts "🌱 Seeding pokemon..."
 
 # Seed your database here
